@@ -23,15 +23,18 @@ input[type=text], input[type=password]
     margin: 24px 0 12px 0;
     position: relative;
 }
+
 img.avatar 
 {
     width: 40%;
     border-radius: 50%;
 }
+
 .container 
 {
     padding: 16px;
 }
+
 span.psw 
 {
     float: right;
@@ -51,6 +54,7 @@ span.psw
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     padding-top: 60px;
 }
+
 /* Modal Content/Box */
 .modal-content 
 {
@@ -59,6 +63,7 @@ span.psw
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
 }
+
 /* The Close Button (x) */
 .close 
 {
@@ -69,18 +74,21 @@ span.psw
     font-size: 35px;
     font-weight: bold;
 }
+
 .close:hover,
 .close:focus 
 {
     color: red;
     cursor: pointer;
 }
+
 /* Add Zoom Animation */
 .animate 
 {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
+
 @-webkit-keyframes animatezoom 
 {
     from {-webkit-transform: scale(0)} 
@@ -92,6 +100,7 @@ span.psw
     from {transform: scale(0)} 
     to {transform: scale(1)}
 }
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) 
 {
@@ -103,6 +112,7 @@ span.psw
        width: 100%;
     }
 }
+
 .navbar 
 {
     overflow: hidden;
@@ -119,11 +129,13 @@ span.psw
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .dropdown 
 {
     float: left;
     overflow: hidden;
 }
+
 .dropdown .dropbtn 
 {
     font-size: 16px;    
@@ -135,10 +147,12 @@ span.psw
     font-family: inherit;
     margin: 0;
 }
+
 .navbar a:hover, .dropdown:hover .dropbtn 
 {
     background-color: #5e3972;
 }
+
 .dropdown-content 
 {
     display: none;
@@ -148,6 +162,7 @@ span.psw
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
 .dropdown-content a 
 {
     float: none;
@@ -157,10 +172,12 @@ span.psw
     display: block;
     text-align: left;
 }
+
 .dropdown-content a:hover 
 {
     background-color: #723952;
 }
+
 .dropdown:hover .dropdown-content 
 {
     display: block;
@@ -171,6 +188,7 @@ h1
 	font-family: verdana;
 	font-size: 300%;
 }
+
 h2
 {
 	font-family: comic sans ms;
@@ -215,28 +233,13 @@ a
 {
 	font-family: comic sans ms;
 }
+
 </style>
 </head>
-<title> MNNIT Store </title>
+<title> Kettles </title>
 <body background="D:\Wallpapers\abstraction_sharp_figure_101902_1920x1080.jpg" >
 <h1> MNNIT Store </h1>
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; float:right">Login</button>
-<button target="_blank" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdIfE2UB47oC9pSwoTzH5vnBed8NbiMe-JE2ULMoL4KXCVxAw/viewform?vc=0&c=0&w=1';".style.display='block'" style="width:auto; float:right">Buy</button>
-    <script>
-        function myFunction()
-        {
-            location.replace("https://docs.google.com/forms/d/e/1FAIpQLSdIfE2UB47oC9pSwoTzH5vnBed8NbiMe-JE2ULMoL4KXCVxAw/viewform?vc=0&c=0&w=1")
-        }
-    </script>
-
-<button target="_blank" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSc3X6Pxt-HQ1BWCDmLewpevCaq7kpQIV5-dEu6hmBd5_VnYKQ/viewform?vc=0&c=0&w=1';".style.display='block'" style="width:auto; float:right">Sell</button>
-    <script>
-        function myFunction()
-        {
-            location.replace("https://docs.google.com/forms/d/e/1FAIpQLSc3X6Pxt-HQ1BWCDmLewpevCaq7kpQIV5-dEu6hmBd5_VnYKQ/viewform?vc=0&c=0&w=1")
-        }
-    </script>
-
 
 <div id="id01" class="modal">
   
@@ -247,20 +250,17 @@ a
     </div>
 
     <div class="container">
-        <form action="process.php" method="POST">
-      <label for="user"><b>Username:</b></label>
-      <input type="text" placeholder="Enter Username" name="user" required>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
 
-      <label for="pass"><b>Password:</b></label>
-      <input type="password" placeholder="Enter Password" name="pass" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
         
       <button type="submit">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
-      </form>
     </div>
-
 
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
@@ -311,12 +311,8 @@ a
 	</div>
 </div>
 <p> Explore your choice of product among your friends freely. <br>Just sign in using your Registration Number and Enjoy.<br> <strong>HAPPY SHOPPING ;)</strong></p>
-<a href="D:\Padhai\Web Development Project\coursebooks.html"><img src="D:\Wallpapers\dark-1015825_960_720.jpg" width="250" height="250" hspace="12" alt="Course Books" title="Course Books" vspace="8"></a>
-<a href="D:\Padhai\Web Development Project\gearcycles.html"><img src="D:\Wallpapers\photo-1532298229144-0ec0c57515c7.jfif" width="400" height="250" hspace="12" alt="Gear Cycle" vspace="8" title="Gear Cycles"></a>
-<a href="D:\Padhai\Web Development Project\kettles.html"><img src="D:\Wallpapers\istockphoto-490578082-612x612.jpg" width="350" height="250" hspace="12" alt="Kettle" vspace="8" title="Kettles"></a>
-<a href="D:\Padhai\Web Development Project\fans.html"><img src="D:\Wallpapers\DSC_0101_600x.jpg" width="300" height="250" hspace="12" alt="Fan" vspace="8" title="Fans"></a>
-<a href="D:\Padhai\Web Development Project\laptops.html"><img src="D:\Wallpapers\ByMjVNk2C87ySTntdounhm.jpg" width="400" height="250" hspace="12" alt="Laptop" vspace="8" title="Laptops"></a>
-<a href="D:\Padhai\Web Development Project\phones.html"><img src="D:\Wallpapers\Sony-Ericsson-Concept-Phone-1.jpg" width="400" height="200" hspace="12" alt="Phones" vspace="8" title="Phones"></a>
-<a href="D:\Padhai\Web Development Project\speakers.html"><img src="D:\Wallpapers\best-speakers-svs-prime-1500x1000.jpg" width="500" height="250" hspace="12" alt="Speakers" vspace="8" title="Speakers"></a>
+<a href="D:\Padhai\Web Development Project\kettle1.html"><img src="   " width="200" height="250" hspace="12" vspace="8"></a>
+<a href="D:\Padhai\Web Development Project\kettle2.html"><img src="  " width="200" height="250" hspace="12" vspace="8"></a>
+<a href="D:\Padhai\Web Development Project\kettle3.html"><img src="   " width="200" height="250" hspace="12" vspace="8"></a>
 </body>
 </html>
